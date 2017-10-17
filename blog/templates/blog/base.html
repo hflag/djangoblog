@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>{% block  title%}
+
+    {% endblock %}</title>
+</head>
+<body>
+    <div id="content">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <div id="sidebar">
+        <h1>My blog</h1>
+        <p>This is my blog.</p>
+    </div>
+</body>
+</html>
