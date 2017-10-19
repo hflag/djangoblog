@@ -28,4 +28,5 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls', namespace='blog', app_name='blog')),
     url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps},
         name='django.contrib.sitemaps.views.sitemap'),
+    url(r'search/', include('haystack.urls')),
 ]
